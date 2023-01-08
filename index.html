@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Encriptador de Textos</title>
+    <script type="text/javascript" src="code.js"></script>
+  </head>
+
+  <body>
+    <div class="desktop">
+      <div class="logo">
+        <img class="logoImg" src="imagenes/Logo.png" alt="logo alura" />
+        <h1 class="maintitle">Encriptador de Textos</h1>
+      </div>
+      <div class="contenedor-principal">
+        <input
+          id="inputTexto"
+          class="text-input"
+          type="text"
+          placeholder="Ingrese el texto aquí!"
+        />
+      </div>
+      <div class="contenedor-secundario">
+        <img src="imagenes/Muñeco.png" alt="" id="imgRigth" />
+        <h1 id="txt-ningun-mensaje">Ningun mensaje fue encontrado</h1>
+        <textarea name="name" id="txt-ingresado" cols="30" rows="8">
+Ingrese el texto que desee encriptar o desencriptar.</textarea
+        >
+        <button onclick="copiar()" id="btn-copiar" type="button" name="buttom">
+          COPIAR
+        </button>
+      </div>
+      <div>
+        <div class="mensaje-admiracion">
+          <img
+            class="vector-adm"
+            src="imagenes/Vector.png"
+            alt="Vector de Admiracion"
+          />
+          <p class="minusculas">Solo minusculas y sin acentos</p>
+        </div>
+        <div class="leftButtom">
+          <button type="button" id="btn-encriptar" onclick="encriptar()">
+            ENCRIPTAR
+          </button>
+          <button type="button" id="btn-desencriptar" onclick="desencriptar()">
+            DESENCRIPTAR
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <p>&copy; Copyrigths Developer Carlos Torres, Alura G4 - Oracle ONE.</p>
+  </footer>
+</html>
